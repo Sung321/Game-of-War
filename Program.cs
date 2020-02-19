@@ -30,7 +30,7 @@ namespace CardDeck
             d.ShuffleDeck();
             d.Deal(Hand1, Hand2);
 
-            System.Console.WriteLine($"The number of cards in deck is {d.NumCards}"); //remove the top card from the deck and priint it out
+
             //d.SortDeck();
             int NUMROUNDS = 0;
             Console.WriteLine("------------------------------------");
@@ -89,20 +89,19 @@ namespace CardDeck
                 
 
 
-                { 
+                {
 
                     Console.WriteLine("Press ENTER to PLAY!");
                     Console.WriteLine("Hold ENTER to Automate");
                     Console.ReadLine();
-
+                    Console.WriteLine("---------------------------------");
 
                     Console.WriteLine($"{Player1} has: {Hand1Card}");
                     Console.WriteLine($"{Player1} has: {Hand2Card}");
-
                     Console.WriteLine($"{Player1} Number of cards: {Hand1.Count}");
                     Console.WriteLine($"{Player2} Number of cards: {Hand2.Count}");
                     Console.WriteLine($"Number of rounds played : {NUMROUNDS}");
-
+                    Console.WriteLine("---------------------------------");
                 }
 
 
